@@ -6,6 +6,7 @@
 package webapplication;
 
 import com.sun.rave.web.ui.appbase.AbstractSessionBean;
+import com.sun.sql.rowset.CachedRowSetXImpl;
 import javax.faces.FacesException;
 
 /**
@@ -32,6 +33,18 @@ public class SessionBean1 extends AbstractSessionBean {
      * here is subject to being replaced.</p>
      */
     private void _init() throws Exception {
+        triptypeRowSet.setDataSourceName("java:comp/env/jdbc/TRAVEL_ApacheDerby");
+        triptypeRowSet.setCommand("SELECT ALL TRAVEL.TRIPTYPE.TRIPTYPEID, TRAVEL.TRIPTYPE.NAME, TRAVEL.TRIPTYPE.DESCRIPTION, TRAVEL.TRIPTYPE.LASTUPDATED  FROM TRAVEL.TRIPTYPE ORDER BY TRAVEL.TRIPTYPE.DESCRIPTION ASC");
+        triptypeRowSet.setTableName("TRIPTYPE");
+    }
+    private CachedRowSetXImpl triptypeRowSet = new CachedRowSetXImpl();
+
+    public CachedRowSetXImpl getTriptypeRowSet() {
+        return triptypeRowSet;
+    }
+
+    public void setTriptypeRowSet(CachedRowSetXImpl crsxi) {
+        this.triptypeRowSet = crsxi;
     }
     // </editor-fold>
 
@@ -123,5 +136,4 @@ public class SessionBean1 extends AbstractSessionBean {
     protected ApplicationBean1 getApplicationBean1() {
         return (ApplicationBean1) getBean("ApplicationBean1");
     }
-
 }

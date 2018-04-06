@@ -5,11 +5,14 @@
         <Node id="Page2.jsp" x="630" y="221" zoom="true"/>
     </Scope>
     <Scope Scope="Project">
-        <Node id="Page1.jsp" x="650" y="150" zoom="false"/>
-        <Node id="Page2.jsp" x="400" y="300" zoom="false"/>
-        <Node id="welcomeJSF.jsp" x="400" y="150" zoom="false"/>
-        <Node id="LinkPage2.jsp" x="102" y="327" zoom="false"/>
-        <Node id="LinkPage1.jsp" x="163" y="42" zoom="false"/>
+        <Node id="Page3.jsp" x="294" y="188" zoom="false"/>
+        <Node id="First.jsp" x="531" y="34" zoom="true"/>
+        <Node id="Next.jsp" x="527" y="143" zoom="true"/>
+        <Node id="Page1.jsp" x="298" y="31" zoom="true"/>
+        <Node id="Page2.jsp" x="298" y="132" zoom="true"/>
+        <Node id="LinkPage2.jsp" x="28" y="197" zoom="true"/>
+        <Node id="welcomeJSF.jsp" x="32" y="29" zoom="false"/>
+        <Node id="LinkPage1.jsp" x="32" y="96" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations">
         <Node id="Page1.jsp" x="156" y="41" zoom="true"/>

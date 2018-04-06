@@ -106,5 +106,24 @@ public class RequestBean1 extends AbstractRequestBean {
     protected ApplicationBean1 getApplicationBean1() {
         return (ApplicationBean1) getBean("ApplicationBean1");
     }
+    protected String parm;
+
+    /**
+     * Get the value of parm
+     *
+     * @return the value of parm
+     */
+    public String getParm() {
+        return parm;
+    }
+
+    /**
+     * Set the value of parm
+     *
+     * @param parm new value of parm
+     */
+    public void setParm(String parm) {
+        this.parm = parm;
+    }
 
 }
