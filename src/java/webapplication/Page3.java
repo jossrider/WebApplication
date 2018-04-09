@@ -7,6 +7,7 @@ package webapplication;
 
 import com.sun.data.provider.impl.CachedRowSetDataProvider;
 import com.sun.rave.web.ui.appbase.AbstractPageBean;
+import com.sun.webui.jsf.component.StaticText;
 import com.sun.webui.jsf.model.DefaultOptionsList;
 import javax.faces.FacesException;
 import javax.faces.convert.IntegerConverter;
@@ -95,6 +96,7 @@ public class Page3 extends AbstractPageBean {
         // Perform application initialization that must complete
         // *after* managed components are initialized
         // TODO - add your own initialization code here
+        this.helloText.setText("Hello");
     }
 
     /**
@@ -158,6 +160,15 @@ public class Page3 extends AbstractPageBean {
      */
     protected RequestBean1 getRequestBean1() {
         return (RequestBean1) getBean("RequestBean1");
+    }
+
+    private StaticText helloText = new StaticText();
+    
+    public String button1_action() {
+        String oldString = (String) this.helloText.getText();
+        this.helloText.setText("Good Bye");
+        String newString = (String) this.helloText.getText();
+        return null;
     }
     
 }

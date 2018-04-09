@@ -8,6 +8,7 @@ package webapplication;
 import com.sun.rave.web.ui.appbase.AbstractPageBean;
 import com.sun.webui.jsf.model.SingleSelectOptionsList;
 import javax.faces.FacesException;
+import javax.faces.event.ValueChangeEvent;
 
 /**
  * <p>Page bean that corresponds to a similarly named JSP page.  This
@@ -170,6 +171,9 @@ public class Page2 extends AbstractPageBean {
         // TODO: Process the action. Return value is a navigation
         // case name where null will return to the same page.
         return "case1";
+    }
+
+    public void textField1_processValueChange(ValueChangeEvent event) {
     }
     
 }

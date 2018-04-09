@@ -13,10 +13,10 @@
                     <webuijsf:link id="link1" url="/resources/stylesheet.css"/>
                 </webuijsf:head>
                 <webuijsf:body id="body1" style="-rave-layout: grid">
-                    <webuijsf:form id="form1">
+                    <webuijsf:form id="form1" virtualFormsConfig="returningCustomer | textField1 | button1">
                         <webuijsf:button actionExpression="#{Page2.button1_action}" id="button1" primary="true"
                             style="left: 143px; top: 120px; position: absolute" text="Click Me!"/>
-                        <webuijsf:textField id="textField1" style="left: 192px; top: 168px; position: absolute"/>
+                        <webuijsf:textField id="textField1" style="left: 192px; top: 168px; position: absolute" valueChangeListenerExpression="#{Page2.textField1_processValueChange}"/>
                         <webuijsf:label for="textField1" id="label1" labelLevel="1" style="left: 144px; top: 168px; position: absolute" text="Name:"/>
                         <webuijsf:message for="textField1" id="message1" showDetail="false" showSummary="true" style="position: absolute; left: 360px; top: 168px"/>
                         <webuijsf:dropDown id="dropDown1" items="#{Page2.dropDown1DefaultOptions.options}"
