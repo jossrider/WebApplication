@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package webapplication;
 
 import com.sun.rave.web.ui.appbase.AbstractSessionBean;
@@ -23,7 +22,6 @@ import javax.faces.FacesException;
  * @version Created on 05/04/2018, 12:08:55 PM
  * @author jaranda
  */
-
 public class SessionBean1 extends AbstractSessionBean {
     // <editor-fold defaultstate="collapsed" desc="Managed Component Definition">
 
@@ -72,7 +70,7 @@ public class SessionBean1 extends AbstractSessionBean {
         // Perform application initialization that must complete
         // *before* managed components are initialized
         // TODO - add your own initialiation code here
-        
+
         // <editor-fold defaultstate="collapsed" desc="Managed Component Initialization">
         // Initialize automatically managed components
         // *Note* - this logic should NOT be modified
@@ -80,9 +78,9 @@ public class SessionBean1 extends AbstractSessionBean {
             _init();
         } catch (Exception e) {
             log("SessionBean1 Initialization Failure", e);
-            throw e instanceof FacesException ? (FacesException) e: new FacesException(e);
+            throw e instanceof FacesException ? (FacesException) e : new FacesException(e);
         }
-        
+
         // </editor-fold>
         // Perform application initialization that must complete
         // *after* managed components are initialized
@@ -127,7 +125,7 @@ public class SessionBean1 extends AbstractSessionBean {
     @Override
     public void destroy() {
     }
-    
+
     /**
      * <p>Return a reference to the scoped data bean.</p>
      *

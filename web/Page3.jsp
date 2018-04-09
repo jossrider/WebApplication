@@ -16,6 +16,8 @@
                     <webuijsf:form id="form1">
                         <webuijsf:listbox converter="#{Page3.listbox1Converter}" id="listbox1"
                             items="#{Page3.triptypeDataProvider.options['TRIPTYPE.TRIPTYPEID,TRIPTYPE.DESCRIPTION']}" style="position: absolute; left: 168px; top: 96px"/>
+                        <webuijsf:staticText id="helloText" style="position: absolute; left: 312px; top: 120px"/>
+                        <webuijsf:button actionExpression="#{Page3.button1_action}" id="button1" style="position: absolute; left: 360px; top: 168px" text="Button"/>
                     </webuijsf:form>
                 </webuijsf:body>
             </webuijsf:html>
